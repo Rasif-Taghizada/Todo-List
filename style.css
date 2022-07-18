@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #066acd;
+}
+.container{
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    min-height: 100px;
+    transform: translate(-50%,-50%);    
+}
+.check{
+    width: 20px;
+    height: 20px;
+}
+.check:checked ~ span{
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* .todo-total-tasks{
+    margin-right: 5px;
+} */
+.todo-left{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.todo-left span{
+    width: 100%;
+    text-align: center;
+}
+.delete{
+    cursor: pointer;
+}
+.todo_tasks{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 16px;   
+    background-color: antiquewhite;
+}
+.todo-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.todo-list span{
+    font-size: 20px;
+}
+.todo-list i{
+    font-size: 20px;
+    color: red;
+}
+.newtask{
+    position: relative;
+    padding: 30px;
+}
+.newtask input{
+    padding: 12px;
+    width: 78%;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.newtask input:focus{   
+    /* outline: none; */
+    border-color: #0d75ec;
+}
+.newtask button{
+    float: right;
+    color: white;
+    font-size: 20px;
+    background-color: #0d75ec;
+    border-radius: 10px;
+    width: 20%;
+    height: 45px;
+    border: none;
+}
